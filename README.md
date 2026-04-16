@@ -2,6 +2,8 @@
 
 > **⚠️ 強制規則** — 此 skill 定義了「完成任務後必須詢問下一步」的強制模式，不可跳過、不可例外。
 
+[English version → README_en.md](README_en.md)
+
 ## 說明
 
 `always-ask-next` 要求 Agent 在每次完成所有任務、宣告結束之前，必須呼叫 `AskUserQuestion`，動態生成 3 個後續行動選項供使用者選擇，避免 Agent 自行假設結束點或遺漏後續行動。
