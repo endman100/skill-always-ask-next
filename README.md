@@ -4,7 +4,7 @@
 
 ## 說明
 
-`agent-next-action` 要求 Agent 在每次完成所有任務、宣告結束之前，必須呼叫 `AskUserQuestion`，動態生成 3 個後續行動選項供使用者選擇，避免 Agent 自行假設結束點或遺漏後續行動。
+`always-ask-next` 要求 Agent 在每次完成所有任務、宣告結束之前，必須呼叫 `AskUserQuestion`，動態生成 3 個後續行動選項供使用者選擇，避免 Agent 自行假設結束點或遺漏後續行動。
 
 ---
 
@@ -16,7 +16,7 @@
 
 ### GitHub Copilot（VS Code）— 推薦，全域生效
 
-在 VS Code User Prompts 資料夾建立 `agent-next-action.instructions.md`，設定 `applyTo: "**"` 使其套用到所有工作區。
+在 VS Code User Prompts 資料夾建立 `always-ask-next.instructions.md`，設定 `applyTo: "**"` 使其套用到所有工作區。
 
 **Windows：**
 ```powershell
@@ -31,14 +31,14 @@ mkdir -p "$HOME/Library/Application Support/Code/User/prompts"
 # mkdir -p "$HOME/.config/Code/User/prompts"
 ```
 
-在該資料夾內建立 `agent-next-action.instructions.md`，內容如下：
+在該資料夾內建立 `always-ask-next.instructions.md`，內容如下：
 
 ````markdown
 ---
 applyTo: "**"
 ---
 
-# 強制規則：完成任務後必須詢問下一步（agent-next-action）
+# 強制規則：完成任務後必須詢問下一步（always-ask-next）
 
 每次 **完成所有當前任務後、宣告結束前**，必須執行以下步驟：
 
