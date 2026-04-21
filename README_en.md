@@ -46,7 +46,6 @@ After **completing all current tasks, before declaring done**, follow these step
 2. Set `header` to: `"Next Action"`
 3. Set `question` to: `"What would you like to do next?"`
 4. **Dynamically generate 3 most relevant follow-up options** based on current context
-5. Fix the 4th option as: `"Other (please specify)"`
 
 ⚠️ This is a mandatory rule. It cannot be skipped, and you must not assume the user does not need a follow-up.
 
@@ -69,7 +68,6 @@ After completing all tasks, before declaring done, you MUST call AskUserQuestion
 - header: "Next Action"
 - question: "What would you like to do next?"
 - 3 dynamically generated relevant next action options based on current context
-- 4th option fixed as: "Other (please specify)"
 This rule is mandatory. No exceptions.
 ```
 
@@ -88,7 +86,6 @@ After completing all tasks, before declaring done, always ask:
 - header: "Next Action"
 - question: "What would you like to do next?"
 - 3 dynamically generated relevant options
-- 4th option: "Other (please specify)"
 No exceptions.
 ```
 

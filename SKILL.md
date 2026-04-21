@@ -23,7 +23,7 @@ metadata:
 **Before finishing all tasks, always use one AskUserQuestion to ask the user what to do next.**
 
 **Question — What would you like to do next?** (header: "Next Action"):
-Dynamically generate and suggest 3 most relevant next actions based on the current context, plus "Other (please specify)"
+Dynamically generate and suggest 3 most relevant next actions based on the current context.
 
 ---
 
@@ -32,8 +32,7 @@ Dynamically generate and suggest 3 most relevant next actions based on the curre
 1. 在完成當前所有任務後、宣告完成前，呼叫 `AskUserQuestion`
 2. `header` 固定為：`"Next Action"`
 3. 根據當前的執行脈絡，動態推斷並生成 3 個最相關的後續行動選項
-4. 第 4 個選項固定為：`"Other (please specify)"`
-5. 等待使用者回應後再繼續
+4. 等待使用者回應後再繼續
 
 ---
 
@@ -47,7 +46,6 @@ AskUserQuestion(
     "<動態生成選項 1，基於當前任務脈絡>",
     "<動態生成選項 2，基於當前任務脈絡>",
     "<動態生成選項 3，基於當前任務脈絡>",
-    "Other (please specify)"
   ]
 )
 ```

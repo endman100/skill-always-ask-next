@@ -48,7 +48,6 @@ applyTo: "**"
 2. `header` 固定為：`"Next Action"`
 3. `question` 固定為：`"What would you like to do next?"`
 4. 根據當前執行脈絡，**動態生成 3 個最相關的後續行動選項**
-5. 第 4 個選項固定為：`"Other (please specify)"`
 
 ⚠️ 此規則為強制規則，不可跳過，不可假設使用者不需要後續行動。
 
@@ -71,7 +70,6 @@ After completing all tasks, before declaring done, you MUST call AskUserQuestion
 - header: "Next Action"
 - question: "What would you like to do next?"
 - 3 dynamically generated relevant next action options based on current context
-- 4th option fixed as: "Other (please specify)"
 This rule is mandatory. No exceptions.
 ```
 
@@ -90,7 +88,6 @@ After completing all tasks, before declaring done, always ask:
 - header: "Next Action"
 - question: "What would you like to do next?"
 - 3 dynamically generated relevant options
-- 4th option: "Other (please specify)"
 No exceptions.
 ```
 
